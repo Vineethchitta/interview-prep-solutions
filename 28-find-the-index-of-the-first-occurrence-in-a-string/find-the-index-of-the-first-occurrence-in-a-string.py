@@ -5,11 +5,10 @@ class Solution:
         i = 0
         m = len(haystack)
         while i<(m-n+1):
+            j=0
             while haystack[i+j] == needle[j]:
                 j+=1
                 if j==n:
-                    return i+j-n
-            else:
-                j = 0
+                    return i
             i+=1
         return -1
